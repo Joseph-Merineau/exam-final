@@ -1,9 +1,9 @@
-@keyframes rotatiom2 {
-  0% { transform: rotation(0 500 200); }
+@keyframes lignes {
+  0% { stroke-dashoffset: 0; }
 
-  50% { transform: rotation(180 500 200); }
+  50% { stroke-dashoffset: 1000; }
 
-  100% { transform: rotation(360 500 200);}
+  100% { stroke-dashoffset: 0; }
 } 
 
 @keyframes rotatiom {
@@ -62,20 +62,17 @@ body{
 							width: 500px;
 							height: 200px;
 							animation: rotatiom 2s linear infinite;
+							/*animation: lignes 6s linear infinite;*/
 						
 						//background-color: yellow;
-						/*circle{
-							transform-origin: 50% 50%;
-							width: 500px;
-							height: 200px;
-							animation: rotating 3s linear infinite;
+						circle{
+							
+							animation: lignes 6s linear infinite;
 						}
 						ellipse{
-							transform-origin: 50% 50%;
-							width: 500px;
-							height: 200px;
-							animation: rotating 3s linear infinite;
-						}*/
+							
+							animation: lignes 6s linear infinite;
+						}
 					}
 				}
 			}
