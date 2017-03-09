@@ -1,4 +1,4 @@
-@keyframes rotatiom {
+@keyframes rotatiom2 {
   0% { transform: rotation(0 500 200); }
 
   50% { transform: rotation(180 500 200); }
@@ -6,7 +6,7 @@
   100% { transform: rotation(360 500 200);}
 } 
 
-@keyframes rotating {
+@keyframes rotatiom {
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -23,13 +23,7 @@
   }
 }
 
-@keyframes heinhein {
-  0% { opacity: 1; transform: scale(1.0); }
-  10% { opacity: 1; transform: scale(1.0); }
-  15% { opacity: 1; transform: scale(1.0); }
-  90% { opacity: 0; transform: scale(2.0); }
-  100% { opacity: 1; transform: scale(1.0); }
-} 
+
 
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -63,20 +57,25 @@ body{
 			article{
 				svg{
 					g.originak {
+
+						transform-origin: 50% 50%;
+							width: 500px;
+							height: 200px;
+							animation: rotatiom 2s linear infinite;
 						
 						//background-color: yellow;
-						circle{
+						/*circle{
 							transform-origin: 50% 50%;
 							width: 500px;
 							height: 200px;
-							animation: rotating 5s linear infinite;
+							animation: rotating 3s linear infinite;
 						}
 						ellipse{
 							transform-origin: 50% 50%;
 							width: 500px;
 							height: 200px;
-							animation: rotating 5s linear infinite;
-						}
+							animation: rotating 3s linear infinite;
+						}*/
 					}
 				}
 			}
